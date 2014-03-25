@@ -1,0 +1,58 @@
+/* USE FONT WEIGHT TO SELECT Light 200, Light 200 Italic, Bold 700, Normal 400 or Normal 400 Italic */
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight:400;
+}
+
+#container {
+	width: 960px;
+	margin: 0 auto;
+	background-color: lightgrey;
+}
+
+header {
+	height: 100px;
+	width: 100%;
+/*	padding: 20px 100px;
+*/}
+
+#logo a img {
+	height: 60px;
+	margin: 20px 0 0 100px ;
+	float: left;
+}
+
+nav ul {
+	width: 400px;
+	float: right;
+}
+
+nav ul li {
+	float:left;
+	margin: 10px;
+	list-style: none;
+}
+
+nav ul li a {
+	color: black;
+	text-decoration: none;
+}
+
+nav ul li a#logIn {
+	background-color: black;
+	color: white;
+	padding:5px 20px;
+	border-radius: 30px;
+}
+
+
+
+/*carousel
+set height
+width
+has buttons so position needs to be relative -in the flow of the document
+previous and next button are connected to the carousel
+buttons and wrapper position relative - look up
+*/
+
