@@ -8,7 +8,7 @@ body {
 #container {
 	width: 960px;
 	margin: 0 auto;
-	background-color: lightgrey;
+	background-color: ##EDEDED;
 }
 
 header {
@@ -59,9 +59,54 @@ buttons and wrapper position relative - look up
 
 
 #carouselWrapper {
-	height: 350px;
+	height: 400px;
 	width: 100%;
-	background-image:url('img/bg_b.png'); 
+	background-image: url('../img/bg_b.png'); 
+	background-position:center;
+	/*used line-height to vertically align as opposed to relative position. http://phrogz.net/css/vertical-align/index.html*/
+	line-height: 6em;
+	position: relative;
+}
+
+#carouselWrapper #introText{
+	line-height: .1;
+	/*horizontally center it:*/
+	text-align: center;
+	vertical-align: middle;
+}
+
+#carouselWrapper #introText h1 {
+	color:#FFFFFF;
+	font-size: 4em;
+/*	margin-bottom: 0px;
+*/}
+
+#carouselWrapper #introText h2 {
+	color:#FFFFFF;
+	font-size: 1.5em;
+	font-weight: 100;
+}
+
+#carouselWrapper .prev_arrow {
+	background-image: url('../img/arrow_left.png');
+	background-repeat: no-repeat; 
+/*		no-repeat center top;*/
+/*	left:-43px;
+*/	width: 50px;
+	height: 40px;
+	background-color: orange;
+	position: relative;
+}
+
+#carouselWrapper .next_arrow {
+	background-image: url('../img/arrow_right.png'); 
+	background-repeat: no-repeat;
+	width: 42px;
+	height: 30px;
+	position: relative;
+	background-color: black;
+	/*top: 200px;*/
+	left:800px;
 }
 
 
