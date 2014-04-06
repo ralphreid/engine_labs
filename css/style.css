@@ -61,10 +61,11 @@ buttons and wrapper position relative - look up
 
 
 #carouselWrapper {
-	height: 400px;
-	width: 100%;
 	background-image: url('../img/bg_b.png'); 
 	background-position:center;
+	height: 300px;
+	width: 100%;
+
 	/*used line-height to vertically align as opposed to relative position. 
 	http://phrogz.net/css/vertical-align/index.html*/
 	line-height: 6em;
@@ -72,15 +73,24 @@ buttons and wrapper position relative - look up
 }
 
 #carouselWrapper #introText{
-	top: 100px; /*Vertically center it
-	although this does't work for responsive!*/
-	width: 850px;
+	/*Vertical and horizontal positioning 
+	although not responsive!*/
+	top: 60px; 
+	width: 835px;
 	display: block;
 	margin-left: auto;
-	margin-right: auto;
-	/*horizontally center it:*/
-	line-height: .2;
+	margin-right: auto; 
+
+	/*responsive positioning but doesn't quite work
+	width: 400px;
+	margin: 100px auto;
+	text-align: left;
+	padding:15px;
+	display: block; */
+
 	/*adjust space between the h1 and h2*/
+	line-height: .2;
+
 	text-align: center;
 	position: relative;
 	float: left;
@@ -90,7 +100,7 @@ buttons and wrapper position relative - look up
 
 #carouselWrapper #introText h1 {
 	color:#FFFFFF;
-	font-size: 6em;
+	font-size: 5em;
 /*	margin-top: 0;
 	display: block;
 	margin-bottom: 0px;
@@ -98,54 +108,91 @@ buttons and wrapper position relative - look up
 
 #carouselWrapper #introText h2 {
 	color:#FFFFFF;
-	font-size: 2.25em;
+	font-size: 1.8em;
 	font-weight: 100;
 }
 
 #carouselWrapper .prev_arrow {
-	background-image: url('../img/arrow_left.png');
-	background-repeat: no-repeat; 
+	/*moved image to the span so we can position relative to div
 
-	/*size and positioning*/
-	height: 30px;
-	width: 40px;
-	/*vertical-align: center;*/
+	/*size the box around the arrow img*/
+	height: 50px;
+	width: 60px;
+
+	/*vertical-align: relative to carousel container;*/
+	top: 125px;
 
 	/* Hide the text, leaving the arrow */
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
 
-	/*padding: 10px auto;*/
+	/*style the box*/
 	background-color: black;
-	color:white;
 	position: relative;
 	float: left;
 	clear: none;
 	display: block;
-	top: 175px;
 }
 
 #carouselWrapper .prev_arrow span {
+	background-image: url('../img/arrow_left.png');
+	background-repeat: no-repeat;
 
+	/*position relative to div.prev_arrow */
+	position: absolute;
+	top: 10px;
+	left: 10px;
+
+	/*size of the arrow img*/
+	height: 30px;
+	width: 40px;
+
+
+	background-color: black;
+	color:white;
 }
 
 #carouselWrapper .next_arrow {
-	background-image: url('../img/arrow_right.png'); 
-	background-repeat: no-repeat;
-	width: 42px;
-	height: 30px;
+	/*moved image to the span so we can position relative to div
+
+	/*size the box around the arrow img*/
+	height: 50px;
+	width: 60px;
+
+	/*vertical-align: relative to carousel container;*/
+	top: 125px;
+
+	/* Hide the text, leaving the arrow */
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+	/*style the box*/
 	background-color: black;
-	top: 175px;
-/*	left:800px;
-*/
 	position: relative;
 	float: right;
 	clear: none;
 	display: block;
 }
 
+#carouselWrapper .next_arrow span {
+	background-image: url('../img/arrow_right.png');
+	background-repeat: no-repeat;
 
+	/*position relative to div.next_arrow */
+	position: absolute;
+	top: 10px;
+	left: 10px;
+
+	/*size of the arrow img*/
+	height: 30px;
+	width: 40px;
+
+
+	background-color: black;
+	color:white;
+}
 
 
 
