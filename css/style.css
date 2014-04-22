@@ -98,13 +98,54 @@ buttons and wrapper position relative - look up
 
 }
 
-#carouselWrapper #introText h1 {
-	color:#FFFFFF;
-	font-size: 5em;
-/*	margin-top: 0;
+#carouselWrapper #contact-us{
+	/*Vertical and horizontal positioning 
+	although not responsive!*/
+	top: 20px; 
+	width: 50%;
 	display: block;
-	margin-bottom: 0px;
-*/}
+	margin-left: auto;
+	margin-right: auto; 
+	color:#FFFFFF;
+	position: relative;
+	float: left;
+	clear: none;
+	line-height: 16px;
+	padding-left: 10%;
+}
+
+#carouselWrapper #contact-us #social-contact ul {
+	width: 70px;
+	margin: 0 auto;
+}
+
+#carouselWrapper #contact-us #social-contact ul li {
+	float:left;
+	margin: 10px;
+	list-style: none;
+}
+
+
+.email {
+	color: black;
+	text-decoration: none;
+	background-image: url(../img/sprite.png);
+	background-position: -1006px -24px;
+	background-repeat: no-repeat;
+	width: 240px;
+	height: 180px;
+}
+
+
+#carouselWrapper form {
+	width: 30%;
+	float: right;
+	margin-left: 10%;
+}
+
+#carouselWrapper #introText h1 {
+	font-size: 5em;
+}
 
 #carouselWrapper #introText h2 {
 	color:#FFFFFF;
