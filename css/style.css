@@ -147,10 +147,6 @@ buttons and wrapper position relative - look up
 	/*size of the arrow img*/
 	height: 30px;
 	width: 40px;
-
-
-	background-color: black;
-	color:white;
 }
 
 #carouselWrapper .next_arrow {
@@ -188,13 +184,11 @@ buttons and wrapper position relative - look up
 	/*size of the arrow img*/
 	height: 30px;
 	width: 40px;
-
-
-	background-color: black;
-	color:white;
 }
 
-
+blockquote {
+	
+}
 
 
 
